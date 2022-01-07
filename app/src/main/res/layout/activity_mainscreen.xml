@@ -4,8 +4,7 @@
     <data>
         <variable name="mainscreenVM" type="com.ankitpatelsandroidapplication.app.modules.mainscreen.data.viewmodel.MainscreenVM"/>
     </data>
-    <FrameLayout android:clickable="true"
-        android:id="@+id/frameMainScreen"
+    <FrameLayout android:id="@+id/frameMainScreen"
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStylegray_50">
         <ImageView android:clickable="true" android:id="@+id/imageIcon"

@@ -13,12 +13,7 @@
         <activity
             android:name="com.ankitpatelsandroidapplication.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ankitpatelsandroidapplication.app.modules.screentwo.ui.ScreentwoActivity" android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
+            android:name="com.ankitpatelsandroidapplication.app.modules.screentwo.ui.ScreentwoActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.ankitpatelsandroidapplication.app.modules.otp.ui.OtpActivity" android:screenOrientation="portrait"/>
         <activity
@@ -46,6 +41,11 @@
         <activity
             android:name="com.ankitpatelsandroidapplication.app.modules.payment.ui.PaymentActivity" android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ankitpatelsandroidapplication.app.modules.mainscreen.ui.MainscreenActivity" android:screenOrientation="portrait"/>
+            android:name="com.ankitpatelsandroidapplication.app.modules.mainscreen.ui.MainscreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

@@ -8,7 +8,6 @@ import com.ankitpatelsandroidapplication.app.R
 import com.ankitpatelsandroidapplication.app.appcomponents.base.BaseActivity
 import com.ankitpatelsandroidapplication.app.databinding.ActivityMainscreenBinding
 import com.ankitpatelsandroidapplication.app.modules.mainscreen.`data`.viewmodel.MainscreenVM
-import com.ankitpatelsandroidapplication.app.modules.screenone.ui.ScreenoneActivity
 import com.ankitpatelsandroidapplication.app.modules.screentwo.ui.ScreentwoActivity
 import kotlin.String
 import kotlin.Unit
@@ -26,10 +25,6 @@ public class MainscreenActivity :
       val destIntent = ScreentwoActivity.getIntent(this, null)
       startActivity(destIntent)
       this.overridePendingTransition(R.anim.left_to_right ,R.anim.right_to_left )
-    }
-    binding.frameMainScreen.setOnClickListener {
-      val destIntent = ScreenoneActivity.getIntent(this, null)
-      startActivity(destIntent)
     }
   }
 
