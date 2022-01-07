@@ -24,7 +24,7 @@ public class MainscreenActivity :
     binding.imageIcon.setOnClickListener {
       val destIntent = ScreentwoActivity.getIntent(this, null)
       startActivity(destIntent)
-      this.overridePendingTransition(R.anim.left_to_right ,R.anim.right_to_left )
+      this.overridePendingTransition(R.anim.zoom_in ,R.anim.zoom_out )
     }
   }
 
