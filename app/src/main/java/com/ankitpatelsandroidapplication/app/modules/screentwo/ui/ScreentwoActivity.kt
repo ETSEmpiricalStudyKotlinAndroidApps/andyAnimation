@@ -17,7 +17,7 @@ public class ScreentwoActivity : BaseActivity<ActivityScreentwoBinding>(R.layout
     {
   private val viewModel: ScreentwoVM by viewModels<ScreentwoVM>()
 
-  private val REQUEST_CODE_LOGIN_ACTIVITY: Int = 935
+  private val REQUEST_CODE_LOGIN_ACTIVITY: Int = 342
 
   public override fun onInitialized(): Unit {
     binding.screentwoVM = viewModel
@@ -28,6 +28,9 @@ public class ScreentwoActivity : BaseActivity<ActivityScreentwoBinding>(R.layout
       val destIntent = LoginActivity.getIntent(this, null)
       startActivityForResult(destIntent, REQUEST_CODE_LOGIN_ACTIVITY)
       this.overridePendingTransition(R.anim.fade_in ,R.anim.fade_out )
+    }
+    binding.txtSkip.setOnClickListener {
+      finish()
     }
   }
 
