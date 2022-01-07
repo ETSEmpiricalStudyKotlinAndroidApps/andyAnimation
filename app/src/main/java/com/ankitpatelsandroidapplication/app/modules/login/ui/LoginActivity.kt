@@ -26,6 +26,7 @@ public class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activit
     binding.frameButton.setOnClickListener {
       val destIntent = OtpActivity.getIntent(this, null)
       startActivity(destIntent)
+      this.overridePendingTransition(R.anim.slide_up ,R.anim.slide_down )
     }
   }
 
