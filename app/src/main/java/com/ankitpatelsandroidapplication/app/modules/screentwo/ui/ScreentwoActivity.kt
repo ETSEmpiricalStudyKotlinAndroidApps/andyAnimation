@@ -17,7 +17,7 @@ public class ScreentwoActivity : BaseActivity<ActivityScreentwoBinding>(R.layout
     {
   private val viewModel: ScreentwoVM by viewModels<ScreentwoVM>()
 
-  private val REQUEST_CODE_LOGIN_ACTIVITY: Int = 342
+  private val REQUEST_CODE_LOGIN_ACTIVITY: Int = 849
 
   public override fun onInitialized(): Unit {
     binding.screentwoVM = viewModel
