@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="payment1RowModel" type="com.ankitpatelsandroidapplication.app.modules.payment.data.model.Payment1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_200">
+        <ImageView android:id="@+id/imageRectangle158"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_169pxh"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="@dimen/_334pxh"
+            android:scaleType="centerCrop"
+            cornerRadius="@{@dimen/_30pxh}"
+            imageRes="@{@drawable/img_rectangle158_2}" tools:src="@drawable/img_rectangle158_2"/>
+        <LinearLayout android:id="@+id/linearGroup179"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/linearGroup388"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_weight="0.8" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:gravity="center"
+                    android:id="@+id/txtConferenceroom"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{payment1RowModel.txtConferenceroom}"
+                    style="@style/txtDMSansmedium18" tools:text="@string/lbl_conference_room"/>
+                <TextView android:gravity="top|center"
+                    android:id="@+id/txtNight"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="wrap_content"
+                    android:text="@{payment1RowModel.txtNight}"
+                    style="@style/txtDMSansmedium12" tools:text="@string/lbl_night"/>
+            </LinearLayout>
+            <TextView android:gravity="top|center"
+                android:id="@+id/txtN77000"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginStart="@dimen/_110pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_weight="0.4" android:layout_width="0dp"
+                android:text="@{payment1RowModel.txtN77000}"
+                style="@style/txtDMSansmedium18_1" tools:text="@string/lbl_n77_000"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

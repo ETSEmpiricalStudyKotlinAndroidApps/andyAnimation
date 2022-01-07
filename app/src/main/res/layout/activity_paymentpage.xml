@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="paymentpageVM" type="com.ankitpatelsandroidapplication.app.modules.paymentpage.data.viewmodel.PaymentpageVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup198"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearGroup188"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" android:paddingBottom="@dimen/_924pxv">
+                <ImageView android:clickable="true"
+                    android:id="@+id/imageVector36"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_18pxh"
+                    android:layout_marginEnd="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_26pxh"
+                    android:layout_marginTop="@dimen/_50pxv"
+                    android:layout_width="@dimen/_10pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_vector36"/>
+                <TextView android:gravity="center|start"
+                    android:id="@+id/txtPayment"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_24pxh"
+                    android:layout_marginStart="@dimen/_24pxh"
+                    android:layout_marginTop="@dimen/_48pxv"
+                    android:layout_width="wrap_content"
+                    android:text="@{paymentpageVM.paymentpageModel.txtPayment}"
+                    style="@style/txtDMSansbold24_1" tools:text="@string/lbl_payment"/>
+                <LinearLayout android:id="@+id/linearForm"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginTop="@dimen/_50pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtTitle"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_23pxh"
+                        android:layout_marginStart="@dimen/_23pxh"
+                        android:layout_width="wrap_content"
+                        android:text="@{paymentpageVM.paymentpageModel.txtTitle}"
+                        style="@style/txtSkModernistskmodernistregular12" tools:text="@string/lbl_card_details"/>
+                    <EditText
+                        android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_15"
+                        android:hint="@string/msg_enter_card_deta"
+                        android:id="@+id/etForm"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_16pxv"
+                        android:paddingStart="@dimen/_23pxh"
+                        android:paddingTop="@dimen/_15pxv"
+                        android:singleLine="true"
+                        android:text="@={paymentpageVM.paymentpageModel.etFormValue}"
+                        android:textColorHint="@color/gray_500" style="@style/etSolidRoundedOutline"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerGroup189"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_20pxh}" tools:itemCount="2" tools:listitem="@layout/row_paymentpage1"/>
+                <FrameLayout android:clickable="true"
+                    android:id="@+id/frameButton"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_361pxv"
+                    android:layout_width="match_parent" style="@style/groupStylecornerRadius">
+                    <TextView android:gravity="center"
+                        android:id="@+id/txtCreateanaccou"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_15pxv"
+                        android:layout_marginEnd="@dimen/_141pxh"
+                        android:layout_marginStart="@dimen/_141pxh"
+                        android:layout_marginTop="@dimen/_15pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{paymentpageVM.paymentpageModel.txtCreateanaccou}"
+                        style="@style/txtSkModernistskmodernistbold14" tools:text="@string/lbl_pay_now"/>
+                </FrameLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerGroup196"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_215pxv"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_20pxh}" tools:itemCount="2" tools:listitem="@layout/row_paymentpage2"/>
+                <LinearLayout android:id="@+id/linearGroup194"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylegray_200">
+                    <ImageView android:id="@+id/imageRectangle158"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_169pxh"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_21pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="centerCrop"
+                        cornerRadius="@{@dimen/_30pxh}"
+                        imageRes="@{@drawable/img_rectangle158_1}" tools:src="@drawable/img_rectangle158_1"/>
+                    <LinearLayout android:id="@+id/linearGroup195"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15pxv"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout android:id="@+id/linearGroup388"
+                            android:layout_gravity="top"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_25pxh"
+                            android:layout_weight="1"
+                            android:layout_width="0dp" android:orientation="vertical">
+                            <TextView android:gravity="start"
+                                android:id="@+id/txtSuperdeluxedr"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:text="@{paymentpageVM.paymentpageModel.txtSuperdeluxedr}"
+                                style="@style/txtDMSansmedium18" tools:text="@string/msg_super_deluxed_r"/>
+                            <TextView android:gravity="top|center"
+                                android:id="@+id/txtNight"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_width="wrap_content"
+                                android:text="@{paymentpageVM.paymentpageModel.txtNight}"
+                                style="@style/txtDMSansmedium12" tools:text="@string/lbl_night"/>
+                        </LinearLayout>
+                        <TextView android:gravity="top|end"
+                            android:id="@+id/txtN55000"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_9pxv"
+                            android:layout_marginEnd="@dimen/_23pxh"
+                            android:layout_marginStart="@dimen/_81pxh"
+                            android:layout_marginTop="@dimen/_7pxv"
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:text="@{paymentpageVM.paymentpageModel.txtN55000}"
+                            style="@style/txtDMSansmedium18_1" tools:text="@string/lbl_n55_000"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

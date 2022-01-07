@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cart1RowModel" type="com.ankitpatelsandroidapplication.app.modules.cart.data.model.Cart1RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" style="@style/groupStylewhite_7">
+        <LinearLayout android:id="@+id/linearGroup150"
+            android:layout_gravity="center|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_22pxv"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardViewRectangle18"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:layout_weight="0.5" android:layout_width="0dp"
+                app:cardBackgroundColor="@color/white_A700"
+                app:cardCornerRadius="@dimen/_20pxh"
+                app:cardElevation="@dimen/_1pxh"
+                app:cardUseCompatPadding="true" style="@style/groupStylewhite_A700cornerRadius">
+                <ImageView android:id="@+id/imageRectangle19"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_45pxh"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="@dimen/_69pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_rectangle19_1"/>
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout android:id="@+id/linearGroup152"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2pxv"
+                android:layout_marginEnd="@dimen/_48pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_weight="1.2" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtLanguage"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@{cart1RowModel.txtLanguage}"
+                    style="@style/txtDMSansmedium16" tools:text="@string/lbl_the_macdonalds"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtClassiccheesbu"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="wrap_content"
+                    android:text="@{cart1RowModel.txtClassiccheesbu}"
+                    style="@style/txtDMSansregular12" tools:text="@string/msg_classic_cheesbu"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtPrice"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="wrap_content"
+                    android:text="@{cart1RowModel.txtPrice}"
+                    style="@style/txtDMSansmedium16_1" tools:text="@string/lbl_23_99"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearGroup427"
+            android:layout_gravity="center|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_44pxv"
+            android:layout_marginTop="@dimen/_44pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <FrameLayout android:id="@+id/frameEllipse19"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_240pxh"
+                android:layout_weight="0.3" android:layout_width="0dp" style="@style/groupStylecornerRadius_7">
+                <TextView android:gravity="start" android:id="@+id/txt"
+                    android:layout_gravity="center|end"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{cart1RowModel.txt}"
+                    style="@style/txtDMSansmedium16_2" tools:text="@string/lbl9"/>
+            </FrameLayout>
+            <TextView android:gravity="top|start" android:id="@+id/txt1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_weight="0.1" android:layout_width="0dp"
+                android:text="@{cart1RowModel.txt1}"
+                style="@style/txtDMSansmedium16" tools:text="@string/lbl_1"/>
+            <FrameLayout android:id="@+id/frameEllipse20"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_weight="0.3" android:layout_width="0dp" style="@style/groupStylecornerRadius_7">
+                <TextView android:gravity="start" android:id="@+id/txt2"
+                    android:layout_gravity="center|end"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{cart1RowModel.txt2}"
+                    style="@style/txtDMSansmedium16_2" tools:text="@string/lbl10"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

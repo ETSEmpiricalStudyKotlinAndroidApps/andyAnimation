@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="productpage2RowModel" type="com.ankitpatelsandroidapplication.app.modules.productpage.data.model.Productpage2RowModel"/>
+    </data>
+    <LinearLayout android:clickable="true" android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStylewhite_2">
+        <ImageView android:id="@+id/imageRectangle18"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_112pxh"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="@dimen/_165pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_rectangle18}" tools:src="@drawable/img_rectangle18"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtTheMacdonalds"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="wrap_content"
+            android:text="@{productpage2RowModel.txtTheMacdonalds}"
+            style="@style/txtDMSansmedium16" tools:text="@string/msg_big_cheese_burg"/>
+        <TextView android:gravity="start"
+            android:id="@+id/txtNo10opplekki"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="match_parent"
+            android:text="@{productpage2RowModel.txtNo10opplekki}"
+            style="@style/txtDMSansregular12" tools:text="@string/msg_no_10_opp_lekki"/>
+        <LinearLayout android:id="@+id/linearGroup119"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_21pxv"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageStar1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_15pxh"
+                android:layout_marginBottom="@dimen/_2pxv"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="@dimen/_14pxh"
+                android:scaleType="fitXY" android:src="@drawable/img_star1"/>
+            <TextView android:gravity="top|start" android:id="@+id/txt4"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_weight="0.3" android:layout_width="0dp"
+                android:text="@{productpage2RowModel.txt4}"
+                style="@style/txtDMSansregular12" tools:text="@string/lbl_4"/>
+            <ImageView android:id="@+id/imageIconlyLightHe"
+                android:layout_gravity="top"
+                android:layout_height="@dimen/_18pxh"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_99pxh"
+                android:layout_width="@dimen/_17pxh"
+                android:scaleType="fitXY" android:src="@drawable/img_iconlylighthe"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

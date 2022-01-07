@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="myorderVM" type="com.ankitpatelsandroidapplication.app.modules.myorder.data.viewmodel.MyorderVM"/>
+    </data>
+    <androidx.core.widget.NestedScrollView android:clipToPadding="false"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewScrollview"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearGroup241"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerGroup239"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_20pxh}" tools:itemCount="3" tools:listitem="@layout/row_myorder1"/>
+            <TextView android:gravity="top|center"
+                android:id="@+id/txtGotoHome"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_133pxh"
+                android:layout_marginStart="@dimen/_134pxh"
+                android:layout_marginTop="@dimen/_64pxv"
+                android:layout_width="wrap_content"
+                android:text="@{myorderVM.myorderModel.txtGotoHome}"
+                style="@style/txtRobotobold14" tools:text="@string/lbl_go_to_home"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerGroup240"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_254pxv"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_20pxh}" tools:itemCount="2" tools:listitem="@layout/row_myorder2"/>
+            <LinearLayout android:id="@+id/linearGroup237"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylegray_200">
+                <ImageView android:id="@+id/imageRectangle158"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_169pxh"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    cornerRadius="@{@dimen/_30pxh}"
+                    imageRes="@{@drawable/img_rectangle158_1}" tools:src="@drawable/img_rectangle158_1"/>
+                <LinearLayout android:id="@+id/linearGroup238"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:id="@+id/linearGroup388"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_25pxh"
+                        android:layout_weight="1"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <TextView android:gravity="start"
+                            android:id="@+id/txtSuperdeluxedr"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@{myorderVM.myorderModel.txtSuperdeluxedr}"
+                            style="@style/txtDMSansmedium18" tools:text="@string/msg_super_deluxed_r"/>
+                        <TextView android:gravity="top|center"
+                            android:id="@+id/txtNight"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_width="wrap_content"
+                            android:text="@{myorderVM.myorderModel.txtNight}"
+                            style="@style/txtDMSansmedium12" tools:text="@string/lbl_night"/>
+                    </LinearLayout>
+                    <TextView android:gravity="top|end"
+                        android:id="@+id/txtN55000"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginEnd="@dimen/_23pxh"
+                        android:layout_marginStart="@dimen/_81pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_weight="0.4"
+                        android:layout_width="0dp"
+                        android:text="@{myorderVM.myorderModel.txtN55000}"
+                        style="@style/txtDMSansmedium18_1" tools:text="@string/lbl_n55_000"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>
