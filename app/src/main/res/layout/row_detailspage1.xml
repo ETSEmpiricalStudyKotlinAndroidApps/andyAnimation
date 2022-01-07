@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="detailspage1RowModel" type="com.ankitpatelsandroidapplication.app.modules.detailspage.data.model.Detailspage1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal" style="@style/groupStylewhite_3">
+        <FrameLayout android:id="@+id/frameEllipse17"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_34pxh"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="@dimen/_34pxh" style="@style/groupStylewhite_4">
+            <ImageView android:id="@+id/imageImage3"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_20pxh"
+                android:layout_marginHorizontal="@dimen/_6pxh"
+                android:layout_marginVertical="@dimen/_6pxv"
+                android:layout_width="@dimen/_20pxh"
+                android:scaleType="centerCrop" android:src="@drawable/img_image3"/>
+        </FrameLayout>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtRegularBun"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_1pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="wrap_content"
+            android:text="@{detailspage1RowModel.txtRegularBun}"
+            style="@style/txtDMSansregular12_1" tools:text="@string/lbl_regular_bun"/>
+    </LinearLayout>
+</layout>

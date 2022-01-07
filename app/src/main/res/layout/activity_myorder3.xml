@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="myorder3VM" type="com.ankitpatelsandroidapplication.app.modules.myorder3.data.viewmodel.Myorder3VM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup249"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearGroup211"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" android:paddingBottom="@dimen/_924pxv">
+                <ImageView android:id="@+id/imageVector36"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_18pxh"
+                    android:layout_marginEnd="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_26pxh"
+                    android:layout_marginTop="@dimen/_50pxv"
+                    android:layout_width="@dimen/_10pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_vector36"/>
+                <TextView android:gravity="center|start"
+                    android:id="@+id/txtYourorders"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_24pxh"
+                    android:layout_marginStart="@dimen/_24pxh"
+                    android:layout_marginTop="@dimen/_48pxv"
+                    android:layout_width="wrap_content"
+                    android:text="@{myorder3VM.myorder3Model.txtYourorders}"
+                    style="@style/txtDMSansbold24_1" tools:text="@string/lbl_your_orders"/>
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayoutTablayout"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_36pxv"
+                    android:layout_width="match_parent"
+                    app:tabIndicatorColor="@color/black_900"
+                    app:tabIndicatorHeight="@dimen/_1pxv"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/black_900" app:tabTextColor="@color/black_900"/>
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPagerViewpager"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_30pxv"
+                    android:layout_weight="1" android:layout_width="match_parent"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

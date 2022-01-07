@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="mainscreenVM" type="com.ankitpatelsandroidapplication.app.modules.mainscreen.data.viewmodel.MainscreenVM"/>
+    </data>
+    <FrameLayout android:clickable="true"
+        android:id="@+id/frameMainScreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_50">
+        <ImageView android:clickable="true" android:id="@+id/imageIcon"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_72pxh"
+            android:layout_marginBottom="@dimen/_369pxv"
+            android:layout_marginEnd="@dimen/_134pxh"
+            android:layout_marginStart="@dimen/_135pxh"
+            android:layout_marginTop="@dimen/_370pxv"
+            android:layout_width="@dimen/_105pxh"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_icon}" tools:src="@drawable/img_icon"/>
+    </FrameLayout>
+</layout>
