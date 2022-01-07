@@ -24,6 +24,9 @@ public class SignupActivity : BaseActivity<ActivitySignupBinding>(R.layout.activ
       val destIntent = LoginActivity.getIntent(this, null)
       startActivity(destIntent)
     }
+    binding.txtSkip.setOnClickListener {
+      finish()
+    }
   }
 
   public companion object {

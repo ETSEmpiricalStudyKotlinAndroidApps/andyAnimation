@@ -24,7 +24,8 @@
                     android:layout_marginStart="@dimen/_171pxh"
                     android:layout_width="@dimen/_34pxh"
                     android:scaleType="fitXY" android:src="@drawable/img_icon_3"/>
-                <TextView android:gravity="top|start"
+                <TextView android:clickable="true"
+                    android:gravity="top|start"
                     android:id="@+id/txtSkip"
                     android:layout_gravity="center_vertical"
                     android:layout_height="wrap_content"

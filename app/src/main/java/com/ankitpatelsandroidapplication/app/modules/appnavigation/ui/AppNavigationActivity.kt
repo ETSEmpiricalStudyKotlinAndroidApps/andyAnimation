@@ -33,28 +33,28 @@ public class AppNavigationActivity :
   }
 
   public override fun setUpClicks(): Unit {
-    binding.linearPayment.setOnClickListener {
-      val destIntent = PaymentActivity.getIntent(this, null)
+    binding.linearSignUp.setOnClickListener {
+      val destIntent = SignupActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.linearScreenThree.setOnClickListener {
-      val destIntent = ScreenthreeActivity.getIntent(this, null)
+    binding.linearDetailsPage.setOnClickListener {
+      val destIntent = DetailspageActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.linearBurgerMenu.setOnClickListener {
-      val destIntent = BurgermenuActivity.getIntent(this, null)
+    binding.linearMainScreen.setOnClickListener {
+      val destIntent = MainscreenActivity.getIntent(this, null)
+      startActivity(destIntent)
+    }
+    binding.linearLogin.setOnClickListener {
+      val destIntent = LoginActivity.getIntent(this, null)
       startActivity(destIntent)
     }
     binding.linearScreenOne.setOnClickListener {
       val destIntent = ScreenoneActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.linearSuccessPage.setOnClickListener {
-      val destIntent = SuccesspageActivity.getIntent(this, null)
-      startActivity(destIntent)
-    }
-    binding.linearDetailsPage.setOnClickListener {
-      val destIntent = DetailspageActivity.getIntent(this, null)
+    binding.linearProductPage.setOnClickListener {
+      val destIntent = ProductpageActivity.getIntent(this, null)
       startActivity(destIntent)
     }
     binding.linearMyOrder.setOnClickListener {
@@ -65,36 +65,36 @@ public class AppNavigationActivity :
       val destIntent = OtpActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.linearCart.setOnClickListener {
-      val destIntent = CartActivity.getIntent(this, null)
+    binding.linearScreenThree.setOnClickListener {
+      val destIntent = ScreenthreeActivity.getIntent(this, null)
       startActivity(destIntent)
     }
     binding.linearPaymentPage.setOnClickListener {
       val destIntent = PaymentpageActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.linearScreenTwo.setOnClickListener {
-      val destIntent = ScreentwoActivity.getIntent(this, null)
-      startActivity(destIntent)
-    }
-    binding.linearMainScreen.setOnClickListener {
-      val destIntent = MainscreenActivity.getIntent(this, null)
-      startActivity(destIntent)
-    }
     binding.linearForgotPassword.setOnClickListener {
       val destIntent = ForgotpasswordActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.linearProductPage.setOnClickListener {
-      val destIntent = ProductpageActivity.getIntent(this, null)
+    binding.linearCart.setOnClickListener {
+      val destIntent = CartActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.linearLogin.setOnClickListener {
-      val destIntent = LoginActivity.getIntent(this, null)
+    binding.linearPayment.setOnClickListener {
+      val destIntent = PaymentActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.linearSignUp.setOnClickListener {
-      val destIntent = SignupActivity.getIntent(this, null)
+    binding.linearBurgerMenu.setOnClickListener {
+      val destIntent = BurgermenuActivity.getIntent(this, null)
+      startActivity(destIntent)
+    }
+    binding.linearSuccessPage.setOnClickListener {
+      val destIntent = SuccesspageActivity.getIntent(this, null)
+      startActivity(destIntent)
+    }
+    binding.linearScreenTwo.setOnClickListener {
+      val destIntent = ScreentwoActivity.getIntent(this, null)
       startActivity(destIntent)
     }
   }

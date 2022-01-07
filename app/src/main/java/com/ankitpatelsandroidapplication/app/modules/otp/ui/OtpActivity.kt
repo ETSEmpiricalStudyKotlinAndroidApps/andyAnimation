@@ -52,6 +52,9 @@ public class OtpActivity : BaseActivity<ActivityOtpBinding>(R.layout.activity_ot
       val destIntent = ProductpageActivity.getIntent(this, null)
       startActivity(destIntent)
     }
+    binding.txtCancel.setOnClickListener {
+      finish()
+    }
   }
 
   private fun startSmartUserConsent(): Unit {
